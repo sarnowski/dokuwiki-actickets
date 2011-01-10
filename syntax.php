@@ -31,8 +31,8 @@ class syntax_plugin_actickets extends DokuWiki_Syntax_Plugin {
 
     const PATTERN_TICKET = '\d+';
     const PATTERN_TICKET_GRP = '(\d+)';
-    const PATTERN_FULLTICKET = '\d+,\d+';
-    const PATTERN_FULLTICKET_GRP = '(\d+),(\d+)';
+    const PATTERN_FULLTICKET = '\d+-\d+';
+    const PATTERN_FULLTICKET_GRP = '(\d+)-(\d+)';
     const PATTERN_PROJECT = '{{Project:\d+}}';
     const PATTERN_PROJECT_GRP = '{{Project:(\d+)}}';
 

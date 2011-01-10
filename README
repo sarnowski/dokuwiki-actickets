@@ -27,11 +27,11 @@ example:
 If you don't want to a add a global project ID or want to reference a ticket
 from another project, you can add the project ID on a per-ticket basis:
 
-  #<ticket-id>,<project-id>
+  #<ticket-id>-<project-id>
 
 example:
 
-  #123,5678
+  #123-5678
 
 
 License
