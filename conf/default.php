@@ -6,4 +6,5 @@
  */
 
 $conf['actickets.url']    = '/activecollab';
+$conf['actickets.token']  = '<your ac api token>';
 $conf['actickets.hash']   = '#';

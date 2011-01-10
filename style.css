@@ -1,0 +1,28 @@
+div.dokuwiki a.acticket_completed {
+	text-decoration: line-through !important;
+}
+
+div.dokuwiki a.acticket_prio {
+	padding-left: 16px;
+	background-repeat: no-repeat;
+}
+
+div.dokuwiki a.acticket_prio_highest {
+	background-image: url(imgs/highest.gif);
+}
+
+div.dokuwiki a.acticket_prio_high {
+	background-image: url(imgs/high.gif);
+}
+
+div.dokuwiki a.acticket_prio_normal {
+	background-image: url(imgs/normal.gif);
+}
+
+div.dokuwiki a.acticket_prio_low {
+	background-image: url(imgs/low.gif);
+}
+
+div.dokuwiki a.acticket_prio_lowest {
+	background-image: url(imgs/lowest.gif);
+}

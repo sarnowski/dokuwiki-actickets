@@ -26,6 +26,7 @@ if (!defined('DOKU_TAB')) define('DOKU_TAB', "\t");
 if (!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 
 require_once DOKU_PLUGIN.'syntax.php';
+require_once DOKU_INC.'inc/form.php';
 
 /**
  * @author Tobias Sarnowski
@@ -94,7 +95,7 @@ class syntax_plugin_actickets extends DokuWiki_Syntax_Plugin {
                     $url .= '/';
                 }
                 $url .= 'public/index.php/projects/'.$data['projectId'].'/tickets/'.$data['ticketId'];
-                $renderer->doc .= '<a href="'.$url.'" target="_blank">';
+                $renderer->doc .= '<a href="'.$url.'" target="_blank" class="acticket">';
                 $renderer->doc .= $this->getConf('actickets.hash').$data['ticketId'];
                 $renderer->doc .= '</a>';
             } else {

@@ -6,6 +6,7 @@
  */
 
 
-$meta['actickets.url'] = array('string');
-$meta['actickets.hash'] = array('string');
+$meta['actickets.url']   = array('string');
+$meta['actickets.token'] = array('string');
+$meta['actickets.hash']  = array('string');
 
