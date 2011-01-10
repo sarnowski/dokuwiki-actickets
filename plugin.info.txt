@@ -1,0 +1,7 @@
+base   actickets
+author Tobias Sarnowski
+email  sarnowski@cosmocode.de
+date   2011-01-10
+name   actickets plugin
+desc   Enables the editors to easily link to Active Collab tickets.
+url    https://github.com/sarnowski/dokuwiki-actickets
