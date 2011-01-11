@@ -95,7 +95,7 @@ class syntax_plugin_actickets extends DokuWiki_Syntax_Plugin {
                     $url .= '/';
                 }
                 $url .= 'public/index.php/projects/'.$data['projectId'].'/tickets/'.$data['ticketId'];
-                $renderer->doc .= '<a href="'.$url.'" target="_blank" class="acticket">';
+                $renderer->doc .= '<a href="'.$url.'" target="_blank" class="acticket" title="Status not yet resolved.">';
                 $renderer->doc .= $this->getConf('actickets.hash').$data['ticketId'];
                 $renderer->doc .= '</a>';
             } else {

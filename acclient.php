@@ -28,6 +28,7 @@ require_once DOKU_INC . 'inc/JSON.php';
  */
 class actickets_acclient {
 	private $base_url;
+	private $client;
 
 	public function __construct($url, $token) {
 		if (substr($url, -1) != '/') {
@@ -35,12 +36,12 @@ class actickets_acclient {
 		}
 		$url .= 'public/api.php';
 		$this->base_url = "{$url}?token={$token}&format=json";
+		$this->client = new DokuHTTPClient();
 	}
 
 	public function get($path, $data = array()) {
-		$client = new DokuHTTPClient();
 		$json = new JSON();
-		return $json->decode($client->get($this->base_url . '&' .
+		return $json->decode($this->client->get($this->base_url . '&' .
 			"path_info=/{$path}&" .
 			buildURLparams($data, '&')));
 	}
