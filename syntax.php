@@ -66,7 +66,7 @@ class syntax_plugin_actickets extends DokuWiki_Syntax_Plugin {
             ,$mode,'plugin_actickets');
     }
 
-    public function handle($match, $state, $pos, &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
         $data = array();
         if (preg_match('/'.self::PATTERN_PROJECT_GRP.'/', $match, $matches)) {
             $this->projectId = $matches[1];
@@ -85,7 +85,7 @@ class syntax_plugin_actickets extends DokuWiki_Syntax_Plugin {
         return $data;
     }
 
-    public function render($mode, &$renderer, $data) {
+    public function render($mode, Doku_Renderer $renderer, $data) {
         if($mode != 'xhtml') return false;
 
         if (!empty($data)) {
